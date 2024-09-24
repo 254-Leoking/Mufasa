@@ -3,7 +3,8 @@ import pickle
 import numpy as np
 
 # Load the saved model and encoders
-
+import os
+import pickle
 
 def load_model():
     model_path = os.path.join(os.path.dirname(__file__), 'model', 'saved_steps.pkl')
