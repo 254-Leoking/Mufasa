@@ -1,6 +1,5 @@
-streamlit
+streamlit==1.38.0
 pandas
 numpy
-scikit-learn
+scikit-learn==1.2.2
 matplotlib
-zipfile
