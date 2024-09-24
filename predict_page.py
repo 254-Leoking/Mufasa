@@ -6,9 +6,12 @@ import numpy as np
 
 
 def load_model():
-    with open(r'C:\Users\user\PycharmProjects\pythonProject1\pythonProject\ml\saved_steps.pkl', 'rb') as file:
+    model_path = os.path.join(os.path.dirname(__file__), 'model', 'saved_steps.pkl')
+    
+    with open(model_path, 'rb') as file:
         data = pickle.load(file)
     return data
+
 
 
 data = load_model()
